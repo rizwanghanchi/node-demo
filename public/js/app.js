@@ -1,4 +1,4 @@
-console.log("javascript is up and run")
+console.log("javascript is up and running")
 
 
 const getWeatherDetails=(location)=>{
