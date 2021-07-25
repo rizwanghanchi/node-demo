@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+  
+
+    <title>Document</title>
+</head>
+<body>
+
+    {{>header}}
+    
+    <div class="cen">
+        <h1>This is a HBS index file</h1>
+        <h3>NAME : {{player.name}}</h3>
+        <h3>TEAM : {{player.team}}</h3>
+    
+        <h4>last 5 match runs : {{#each player.runs}}
+                                <li>{{first}} Runs {{second}} balls</li>
+                                {{/each}}
+                                </h4>
+
+                                <form>
+                                    <input placeholder="Enter Location" type="text">
+                                    <button>Search</button>
+                                </form>
+
+                                <p class="" id="mssg1"></p>
+                                <p class="" id="mssg2"></p>
+    </div>
+
+    <div class="cen">
+        <img src="img/pollard.png">
+    </div>
+
+    {{>footer}}
+
+  <script src="js/app.js"></script>
+</body>
+</html>
