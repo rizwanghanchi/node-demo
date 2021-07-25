@@ -8,6 +8,7 @@ fetch('http://localhost:3000/weather?address='+location).then((res)=>{
         if(data.error){
             console.log(data.error)
             mssg1.textContent=data.error.info
+            mssg2.textContent=""
         }
         else{
             console.log(data.data)
